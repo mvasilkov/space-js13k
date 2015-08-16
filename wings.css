@@ -1,0 +1,36 @@
+/* Polandball Space Program
+ * Copyright (c) 2015 Mark Vasilkov (https://github.com/mvasilkov)
+ * License: MIT */
+
+/* Based on 'Animated wings' snippet by Colin van Eenige */
+
+html, body {
+    background: #263238;
+    height: 100%;
+    margin: 0;
+    position: relative;
+    width: 100%;
+}
+
+.wing {
+    height: 100px;
+    left: calc(50% - 20px);
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    width: 40px;
+}
+
+.wing + .wing {
+    -webkit-transform: rotateY(200grad) translate(-50%, -50%);
+}
+
+.feather {
+    background: #fffce3;
+    border-bottom-right-radius: 100%;
+    border-top-left-radius: 100%;
+    height: 100px;
+    position: absolute;
+    -webkit-transform-origin: top left;
+    width: 20px;
+}
